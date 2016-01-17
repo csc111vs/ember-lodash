@@ -5,13 +5,13 @@ var path = require('path');
 var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-  name: 'lodash',
+  name: 'ramda',
 
   treeForAddon: function(tree) {
-    var lodashPath = path.dirname(require.resolve('lodash-es/lodash.js'));
-    var lodashTree = this.treeGenerator(lodashPath);
+    var ramdaPath = path.dirname(require.resolve('ramda/ramda.js'));
+    var ramdaTree = this.treeGenerator(ramdaPath);
 
-    var trees = mergeTrees([lodashTree, tree], {
+    var trees = mergeTrees([ramdaTree, tree], {
       overwrite: true
     });
 

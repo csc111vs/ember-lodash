@@ -1,3 +1,3 @@
-import lodash from './lodash';
+import ramda from './ramda';
 
-export default lodash;
+export default ramda;

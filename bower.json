@@ -1,5 +1,5 @@
 {
-  "name": "lodash",
+  "name": "ramda",
   "dependencies": {
     "ember": "1.13.10",
     "ember-cli-shims": "0.0.6",
