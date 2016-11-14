@@ -8,7 +8,7 @@ module.exports = {
   name: 'ramda',
 
   treeForAddon: function(tree) {
-    var ramdaPath = path.dirname(require.resolve('ramda/ramda.js'));
+    var ramdaPath = path.dirname(require.resolve('ramda/dist/ramda.js'));
     var ramdaTree = this.treeGenerator(ramdaPath);
 
     var trees = mergeTrees([ramdaTree, tree], {
