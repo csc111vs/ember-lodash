@@ -1,4 +1,5 @@
 import _ from 'ramda/ramda';
+import { module, test } from 'ember-qunit';
 
 module('Unit | Utility ');
 
